@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=form, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="saveDept">
+        {%csrf_token%}
+        <table border="1">
+            <tr><td>Did</td><td><input type="text" name="Did" required></td></tr>
+            <tr><td>Dname</td><td><input type="text" name="Dname" required></td></tr>
+            <tr><td>Dlocation</td><td><input type="text" name="Dlocation" required></td></tr>
+            <tr><td><input type="submit" value="addDept"></td></tr>
+        </table>
+    </form>
+</body>
+</html>
